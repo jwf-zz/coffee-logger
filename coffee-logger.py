@@ -44,7 +44,7 @@ def cleanup(device):
 	io.output(POWER_PIN, False)
 
 def log(badgenum):
-	newlog = CoffeeLog(badge_num=badgenum, time=time.strftime("%Y-%m-%d %H:%M:%S"), machine="SEA0017A")
+	newlog = CoffeeLog(badge_num=badgenum, time=time.strftime("%Y-%m-%d %H:%M:%S"), machine=MACHINE)
 	newlog.save()
 
 def get_input(device):
